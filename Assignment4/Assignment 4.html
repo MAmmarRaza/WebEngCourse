@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <title>abc</title>
+    <style>
+        /* Question 1 */
+
+        .Q1{
+            height: 50px;
+            max-width: 600px;
+            background-color: yellow;
+            padding: 20px;
+            border: 5px solid black;
+        }
+
+        .Q1:hover{
+           transform: rotate(180deg);
+        }
+        /* Question 2 */
+
+        .Q2{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            animation-name: ques2;
+            animation-duration: 2s;
+            transition: 1s;
+            animation-direction: normal;
+        }
+        @keyframes ques2{
+            from{
+                position: relative;
+            }
+            to{
+                height: 300px;
+                width: 300px;
+                transform: rotate(180deg); 
+            }
+        }
+        /* Question 3 */
+        .Q3 img{
+            height: 300px;
+            width: 300px;
+        }
+        .imgGreyScale{
+            filter: grayscale(100%);
+            transition: filter 1000ms;
+        }
+        .imgBlur{
+            filter: blur(2px);
+        }
+        .imgOpacity{
+            opacity: 0.4;
+        }
+        .imgGreyScale:hover{
+            filter: grayscale(0%);
+        }
+        .imgBlur:hover{
+            filter: none;
+        }
+        .imgOpacity:hover{
+            opacity: 1;
+        }
+
+        /* Question 4 */
+        .Q4 div{
+            display: inline;
+        }
+        .Q4 div img{
+            height: 200px;
+            width: 200px;
+        }
+
+        @media (max-width: 800px) {
+            .Q4{
+                display: flex;
+            }
+        }
+
+        @media (max-width: 300px) {
+            .Q4{
+                display: block;
+            }
+            .Q4 div img{
+                display: flex;
+            }
+        }
+
+        /* Question 5 */
+        .Q5 img{
+            height: 300px;
+            width: 300px;
+            box-shadow: 0px 0px 20px black;
+        }
+        .Q5 h1{
+            color: white;
+            text-shadow: 0px 0px 10px rgb(0, 0, 0);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+    </style>
+    </head>
+<body>
+    <!-- Question 1 -->
+    <h1>Question 1: transform</h1>
+    <div class="Q1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem perferendis vitae blanditiis quam placeat optio consequatur asperiores eum error. Dolores animi tenetur modi facere maxime.
+    </div>
+
+    <!-- Question 2 -->
+    <h1>Question 2: transition, transform</h1>
+    <div class="Q2">
+    </div>
+
+    <!-- Question 3 -->
+    <h1>Question 3: GreyScale, Blur, Opacity</h1>
+    <div class="Q3">
+        <img class="imgGreyScale" src="mountains-6318080_1920.jpg" alt="">
+        <img class="imgBlur" src="mountains-6318080_1920.jpg" alt="">
+        <img class="imgOpacity" src="mountains-6318080_1920.jpg" alt="">
+    </div>
+
+    <!-- Question 4 -->
+    <h1>Question 4: Image Gallery media query</h1>
+    <div class="Q4">
+        <div>
+            <img  src="mountains-6318080_1920.jpg" alt="">
+            <img  src="mountains-6318080_1920.jpg" alt="">
+        </div>
+        <div>
+            <img  src="mountains-6318080_1920.jpg" alt="">
+            <img  src="mountains-6318080_1920.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Question 5 -->
+    <h1>Question 5: Shadows</h1>
+    <div class="Q5">
+        <h1>Text Shadow Effect</h1>
+        <img src="mountains-6318080_1920.jpg" alt="">
+    </div>
+
+</body>
+</html>

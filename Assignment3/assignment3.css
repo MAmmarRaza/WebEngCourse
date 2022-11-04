@@ -1,0 +1,82 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.active{
+    background-color: #89e4a2;
+}
+.t-center{
+    text-align: center;
+}
+.navbar{
+    height: 60px;
+    background-color:  #1dce4f;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+.navbar ul li{
+    padding: 0px 7%;
+    color: white;
+    font-size: 50px;
+}
+.navbar ul li:hover{
+    background-color: #89e4a2;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size:20px;
+}
+.navbar ul li a:hover{
+    text-decoration: none;
+}
+figcaption{
+    text-align: center;
+    color: rgb(101, 186, 101);
+    font-size: 30px;
+}
+.content{
+    margin: 10px 150px;
+}
+figure{
+    margin: 0px;
+}
+img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+table{
+    float: left;
+    border-collapse: collapse;
+    margin-right: 10px;
+}
+th{
+    background-color: #1dce4f;
+    color: white;
+    height: 40px;
+}
+td{
+    font-weight:bold;
+    padding: 10px 15px 10px 15px ;
+    background-color: #89e4a2;
+}
+td a{
+    text-decoration:none;
+    font-weight: bold;
+    color: black;
+}
+td:hover{
+    cursor: pointer;
+    background-color: rgb(101, 186, 101);
+}
+.content p{
+    font-size: 18px;
+    font-weight:500;    
+}
