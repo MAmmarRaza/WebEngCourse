@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NTU</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <style>
+            .blue{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>NTU</h1>
+        <p id="first">This is a paragraph</p>
+        <p>This is another paragraph</p>       
+        <div id="demo" >This is somoe important text!</div>
+        <input type="text">
+        <button id="tweak">Tweak</button>
+        <button id="hs">Hide and show</button>
+
+
+        <script>
+        // Question 1
+            $(function(){
+                $('div p:nth-child(1)').hide(2000);
+            })
+
+        // Question 2
+
+            // first method
+            $("#tweak").click(function(){
+                $("#demo").attr("class","blue");
+            })
+
+             // second method
+             $("#tweak").click(function(){
+                $("#demo").addClass("blue");
+                $(".blue").css({"background-color": "red"});
+            })
+
+        // Question 3
+            $("#hs").click(function(){
+                    $("p:nth-child(2)").hide("slow",function(){
+                        $("p:nth-child(2)").show("slow");
+                    })
+                });
+
+        // Question 4
+            $("h1").dblclick(function(){
+                $("h1").text("National Textile University");
+            })
+
+        //Question 5
+            $("#demo").mouseenter(function(){
+                alert($("#demo").width() )
+            })
+
+        //Questino 6
+             $("input").keyup(function(){
+                let uppercase= $(this).val().toUpperCase();
+                $("input").val(uppercase); 
+            })
+             
+
+        </script>
+    </body>
+</html>

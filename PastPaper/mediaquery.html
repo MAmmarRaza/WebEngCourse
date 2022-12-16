@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>NTU</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <style>
+         img{
+           height: 200px;
+           width: 100%;
+         }
+        .row div{
+            margin: 10px;
+        }
+
+         .row{
+            display: flex;
+           
+         }
+
+         @media screen and (max-width: 600px) and (min-width: 500px) {
+            img{
+           height: 800px;
+           width: 100%;
+           
+         }
+         .row{
+            flex-wrap: wrap;
+         }
+         }
+        </style>
+    </head>
+    <body>
+       <!-- container, container-fluid, row, col -->
+        <div class="container-fluid bg-primary">
+            <div class="row">
+                <div class=""><img src="card.jpg" alt=""></div>
+                <div class=""><img src="card.jpg" alt=""></div>
+                <div class=""><img src="card.jpg" alt=""></div>
+                <div class=""><img src="card.jpg" alt=""></div>
+            </div>    
+        </div>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<style>
+    body {
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        padding-top: 100px;
+    }
+    .card {
+        width: 400px;
+        text-align: center;
+        box-shadow: 20px 20px 20px rgb(180, 180, 180);
+    }
+   
+    .card:hover{
+        box-shadow: 20px 20px 20px black;
+        margin-top: -20px;
+            margin-bottom: 20px;
+            transition: 1s;
+    }
+    .card-image {
+        height: 200px;
+        width: 400px;
+    }
+     .imgGreyScale{
+        filter: grayscale(0);
+        transition: filter 1000ms;
+    }
+
+
+    .imgGreyScale:hover{
+        filter: grayscale(100%);
+    }
+
+
+
+</style>
+<body>
+    <div class="card">
+        <img src="card.jpg" class="card-image imgGreyScale shadowImg imgLarge imgReplace1">
+        <b>Lorem Ipsum</b>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem beatae commodi sapiente.</p>
+    </div>
+    <div class="card">
+        <img src="card.jpg" class="card-image imgGreyScale shadowImg imgLarge imgReplace2">
+        <b>Lorem Ipsum</b>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem beatae commodi sapiente.</p>
+    </div>
+    <div class="card">
+        <img src="card.jpg" class="card-image imgGreyScale shadowImg imgLarge imgReplace3">
+        <b>Lorem Ipsum</b>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem beatae commodi sapiente.</p>
+    </div>
+    
+    <script>
+        $(function(){
+            $(".imgReplace1").dblclick(function(){
+                let img1=$(".imgReplace1").attr("src");
+                if(img1=="card.jpg"){
+                    $(".imgReplace1").attr("src","mountains-6318080_1920.jpg");
+                    alert("height: "+ this.height + " width: "+ this.width)
+                }
+                else{
+                    $(".imgReplace1").attr("src","card.jpg");
+                    alert("height: "+ this.height + " width: "+ this.width)
+                }
+            });
+
+            $(".imgReplace2").dblclick(function(){
+                let img2=$(".imgReplace2").attr("src");
+                if(img2=="card.jpg"){
+                    $(".imgReplace2").attr("src","mountains-6318080_1920.jpg");
+                    alert("height: "+ this.height + " width: "+ this.width)
+                }
+                else{
+                    $(".imgReplace2").attr("src","card.jpg");
+                    alert("height: "+ this.height + " width: "+ this.width)
+                }
+            });
+
+            $(".imgReplace3").dblclick(function(){
+                let img3=$(".imgReplace3").attr("src");
+                if(img3=="card.jpg"){
+                    $(".imgReplace3").attr("src","mountains-6318080_1920.jpg");
+                    alert("height: "+ this.height + " width: "+ this.width)
+                }
+                else{
+                    $(".imgReplace3").attr("src","card.jpg");
+                    alert("height: "+ this.height + " width: "+ this.width)
+                }
+            });
+            
+        });
+       
+    
+     </script>
+</body>
+</html>
